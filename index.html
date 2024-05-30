@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+</head>
+
+<body>
+    <div class="body">
+    <div class="calc">
+        <h1>Investment Calculator</h1>
+        <form class="calcForm">
+            <label for="InitialInvestment">Initial Investment</label>
+            <input type="number" placeholder="Enter amount" class="initial" required>
+            <label for="MonthlyContribution">Monthly Contribution</label>
+            <input type="number" placeholder="Enter amount" class="monthly" required>
+            <label for="YeartoGrow">Years to Grow</label>
+            <input type="number" placeholder="Enter years" class="years" required>
+
+            <label for="interestRate">Interest Rate (%)</label>
+            <div>
+                <button type="button" class="adjustRate decrease-rate">-</button>
+                <span class="intRate">1</span>
+                <button type="button" class="adjustRate increase-rate">+</button>
+            </div>
+            <div class="btns">
+            <button type="submit">Calculate</button>
+            <button class="reset" type="button">Reset</button>
+        </div>
+        </form>
+        <h2 class="result"></h2>
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
